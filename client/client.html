@@ -58,7 +58,7 @@
         const parser = new DOMParser();
         const xml = parser.parseFromString(text, 'text/xml');
         const message = xml.querySelector('message').textContent;
-        const id = xml.querySelector('id');
+        const id = xml.querySelector('id').textContent;
 
         content.innerHTML = `Message: ${message}`;
         if (id) {
