@@ -47,7 +47,7 @@
       const contentType = response.headers.get('content-type');
 
       if (contentType.includes('application/json')) {
-        
+
         const data = JSON.parse(text);
         content.innerHTML = `Message: ${data.message}`;
         if (data.id) {
@@ -61,7 +61,7 @@
         const id = xml.querySelector('id');
 
         content.innerHTML = `Message: ${data.message}`;
-        if (data.id) {
+        if (id) {
           content.innerHTML += `<br>ID: ${data.id}`;
         }
       }
