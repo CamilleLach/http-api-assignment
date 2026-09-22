@@ -1,0 +1,27 @@
+{
+  "name": "http-api-assignment",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/CamilleLach/http-api-assignment#readme",
+  "bugs": {
+    "url": "https://github.com/CamilleLach/http-api-assignment/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CamilleLach/http-api-assignment.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "eslint.config.js",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "pretest": "eslint ./src --fix",
+    "test": "echo \"tests complete\""
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.11.0",
+    "globals": "^17.12.0"
+  }
+}
