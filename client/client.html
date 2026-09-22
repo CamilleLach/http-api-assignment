@@ -60,9 +60,9 @@
         const message = xml.querySelector('message').textContent;
         const id = xml.querySelector('id');
 
-        content.innerHTML = `Message: ${data.message}`;
+        content.innerHTML = `Message: ${message}`;
         if (id) {
-          content.innerHTML += `<br>ID: ${data.id}`;
+          content.innerHTML += `<br>ID: ${id}`;
         }
       }
     };
